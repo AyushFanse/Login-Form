@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Login Page</title>
+    </head>
+    <body>
+        <div class="input_form">
+            <form action="" method=" ">
+                <div class="inputOut">
+                    <div class="input">
+                        <input type="email" id="input" required />
+                        <label class="input_label" for="input">Email</label>
+                    </div>
+
+                    <div class="input">
+                        <input type="password" id="password" required />
+                        <label class="input_label" for="password"
+                            >Password</label
+                        >
+                    </div>
+                    <button type="submit">submit</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
+
+<script>
+    let labels = document.querySelectorAll(".input_label");
+
+    labels.forEach((label) => {
+        console.log(label);
+        label.innerHTML = label.innerText
+            .split("")
+            .map(
+                (letter, idx) =>
+                    `<span style="transition-delay:${
+                        idx * 70
+                    }ms">${letter}</span>`
+            )
+            .join("");
+    });
+</script>
