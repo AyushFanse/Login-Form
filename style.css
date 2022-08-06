@@ -147,3 +147,23 @@ button:active {
     background: #00aaff;
     transform: scale(0.95);
 }
+
+@media (max-width: 768px) {
+    * {
+        overflow: hidden;
+    }
+
+    .input_form {
+        --width: 200px;
+    }
+
+    .input_form:before {
+        animation: none;
+        top: 70px;
+    }
+
+    .input_form:after {
+        animation: none;
+        bottom: 70px;
+    }
+}
