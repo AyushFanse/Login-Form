@@ -19,6 +19,7 @@ body {
     position: absolute;
     content: "";
     top: 10px;
+    right:10px;
     width: var(--width);
     height: var(--width);
     background: linear-gradient(180deg, #00fffd 0%, #0080ff 100%);
