@@ -12,12 +12,25 @@
             <form action="" method=" ">
                 <div class="inputOut">
                     <div class="input">
-                        <input type="email" id="input" required />
+                        <input
+                            type="email"
+                            id="input"
+                            placeholder=" "
+                            required
+                        />
                         <label class="input_label" for="input">Email</label>
                     </div>
 
                     <div class="input">
-                        <input type="password" id="password" required />
+                        <input
+                            type="password"
+                            placeholder=" "
+                            id="password"
+                            required
+                            pattern="[0-9a-zA-Z]{6,20}"
+                            autocomplete="off"
+                            title="Enter an min 6 and max 20 digits password"
+                        />
                         <label class="input_label" for="password"
                             >Password</label
                         >
